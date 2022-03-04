@@ -7,19 +7,15 @@ using namespace std;
 
 int main()
 {
-	DoublyLinkedList<int> dl{ 1,2,3,4,5 };
+	DoublyLinkedList<int> dl{ 2,5,3,8,5,39,1,44,3,23 };
 	DoublyLinkedList<int>::iterator itr;
 	DoublyLinkedList<int>::reverse_iterator riter;
-
+	dl.Sort();
 	for (itr = dl.begin(); itr != dl.end(); itr++)
 	{
 		cout << *itr << endl;
 	}
-
-	for (riter = dl.rbegin(); riter != dl.rend(); riter++)
-	{
-		cout << *riter << endl;
-	}
+	
 	
 	
 

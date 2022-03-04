@@ -155,6 +155,22 @@ public:
 
 	Reverse_Iterator<T> rend()const;
 
+	void Sort()
+	{
+		for (PNODE i = mBegin->mFront; i != mEnd->mRear; i = i->mFront)
+		{
+			for (PNODE j = i->mFront; j != mEnd; j = j->mFront)
+			{
+				if (i->mData > j->mData)
+				{
+					T data = i->mData;
+					i->mData = j->mData;
+					j->mData = data;
+				}
+			}
+		}
+	}
+
 };
 
 template<typename T>
