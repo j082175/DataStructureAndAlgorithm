@@ -3,6 +3,8 @@
 #include <list>
 #include <vector>
 #include "DoublyLinkedList.h"
+#include "CBST.h"
+#include <map>
 using namespace std;
 
 int main()
@@ -16,12 +18,12 @@ int main()
 		cout << *itr << endl;
 	}
 	
-	
-	
 
-	list<int> l{ 1,2,3,4,5 };
-	list<int>::const_iterator citer;
-	list<int>::iterator iter;
-	vector<int>::iterator i;
-	
+	CBST<int, int> cbst;
+	tPair<int, int> p1(10);
+	cbst.insert(p1);
+	cbst.insert(tPair<int, int>(44));
+	cbst.insert(tPair<int, int>(35));
+
+	return 0;
 }
