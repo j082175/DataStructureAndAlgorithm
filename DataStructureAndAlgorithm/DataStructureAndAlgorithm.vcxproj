@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="CBST.cpp" />
     <ClCompile Include="DataStructureAndAlgorithm.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="CBST.h" />
     <ClInclude Include="DoublyLinkedList.h" />
   </ItemGroup>
